@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Titillium+Web:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 600px 600px;
+  grid-template-columns: 600px 600px;
+  -webkit-animation: appear 7s forwards;
+          animation: appear 7s forwards;
+}
+
+.block1 {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  -webkit-animation: rotate 2s ease-in-out;
+          animation: rotate 2s ease-in-out;
+}
+.block1 img {
+  width: 452px;
+  height: 461px;
+  z-index: 1;
+  margin: 7%;
+}
+.block1 .square1 {
+  width: 382px;
+  height: 427px;
+  background: #ff7a7c;
+  position: absolute;
+  margin: 110px 0 0 150px;
+}
+.block1 .square2 {
+  width: 435px;
+  height: 328px;
+  background: #87CEEB;
+  position: absolute;
+  margin: 100px 50px 0 10px;
+}
+
+.block2 {
+  margin-top: 20px;
+}
+.block2 .square3 {
+  margin: 90px 0 10px 0;
+  width: 209px;
+  height: 64px;
+  background: #3c94b7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.block2 .square3 p {
+  font-size: 25px;
+  color: white;
+}
+.block2 h3 {
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+.block2 h2 {
+  margin-top: 20px;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 60px;
+  line-height: 1;
+}
+.block2 h4 {
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  line-height: 2;
+}

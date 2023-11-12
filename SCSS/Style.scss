@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+$text_margin: 20px;
+@mixin font {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Titillium+Web:wght@700&display=swap');
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+        }
+        to {
+        transform: rotate(360deg);
+        }
+      }
+@keyframes appear {
+    from {
+        opacity: 0;}
+    to {
+        opacity: 1;}
+      }
+.main {
+    display: grid;
+    grid-template-columns: 600px 600px;
+    animation: appear 7s forwards;
+}
+.block1 {
+        display: grid;
+        position: relative;
+        animation: rotate 2s ease-in-out;
+        img {
+            width: 452px;
+            height: 461px;
+            z-index: 1;
+            margin: 7%
+            }
+        .square1 {
+            width: 382px;
+            height: 427px;
+            background: #ff7a7c;
+            position: absolute;
+            margin: 110px 0 0 150px; 
+        }
+        .square2 {
+            width: 435px;
+            height: 328px;
+            background:#87CEEB;
+            position:absolute;
+            margin: 100px 50px 0 10px;
+        }    
+    }
+.block2 {
+    margin-top: 20px;
+    .square3 {
+        margin: 90px 0 10px 0;
+        width: 209px;
+        height: 64px;
+        background:#3c94b7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 25px;
+            color: white;
+            }
+        }
+    h3 {
+        margin-top: $text_margin;
+        @include font();
+        letter-spacing: 3px;
+        line-height: 1;}
+    h2 {
+        margin-top: $text_margin;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 60px;
+        line-height: 1}
+    h4 {
+        margin-top: $text_margin;
+        @include font();
+        line-height: 2;}
+  }
